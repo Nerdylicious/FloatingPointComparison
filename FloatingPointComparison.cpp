@@ -26,7 +26,7 @@ bool nearly_equal(float a, float b){
     //a or b is zero or both are extremely close to zero
     //other implementations use float min normal instead of float min
     else if(a == 0 || b == 0 || diff < std::numeric_limits<float>::min()){
-        return diff < (EPSILON * std::numeric_limits<int>::min());
+        return diff < (EPSILON * std::numeric_limits<float>::min());
     }
     //use relative error
     else{
