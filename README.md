@@ -1,2 +1,3 @@
-# FloatingPointComparison
-C++ implementation to compare two floating point numbers.
+# Floating Point Comparison
+
+A function to compare floating point numbers. Numbers in computers are internally represented in binary, and there are some floating point numbers (such as 0.1) that do not have an exact representation in binary. If there is no exact representation in binary, then the value is rounded to the nearest representation in binary, which results in some floating point numbers being slightly imprecise. This imprecision results in some comparisons (such as testing for equality) to not work as expected. Here we implement a function that compares two floating point numbers by using an epsilon value (error margin) that takes into account floating point imprecision.
